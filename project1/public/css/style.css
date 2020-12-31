@@ -1,0 +1,241 @@
+@import url(all.min.css);
+@import url(normalize.css);
+@import url(bootstrap.min.css);
+@import url(bootstrap2.min.css);
+
+
+/*Style for global css*/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content{
+    width: 1230px;
+    background-color: #eeeeee;
+    margin: auto;
+}
+
+/*Style for Sub-header*/
+
+#sub-header{
+    background-color: #fffac2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#sub-header .container{
+    overflow: hidden;
+}
+
+#sub-header .container .left-sidebar{
+    float: left;
+    margin-left: 15px;
+}
+
+#sub-header .container nav{
+    float: right;
+}
+
+#sub-header li{
+    display: inline-block;
+    padding-top: 15px;
+    margin-right: 32px;
+}
+
+#sub-header li i{
+    background-color: transparent;
+}
+
+/*
+Style for Sidebar*/
+.left-sub-header {
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar h4 {
+    padding: 8px 8px 8px 32px;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+.sidebar p{
+    padding: 8px 8px 8px 32px;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+#main {
+    transition: margin-left .5s;
+    /*padding: 10px;*/
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+/*Style for header*/
+#header{
+    height: 150px;
+    background-color: #6a7bff;
+    margin-bottom: 20px;
+}
+
+#header .container{
+    overflow: hidden;
+}
+
+#header  .text{
+    float: left;
+}
+
+#header nav{
+    float: right;
+}
+
+#header .container .text h2{
+    font-size: 42px;
+    margin-top: 20px;
+    margin-left: 24px;
+
+}
+
+#header .container .text p{
+    font-size:50px;
+    margin-left: 70px;
+}
+
+#header .container nav ul li{
+    display: inline-block;
+    margin-right: 32px;
+    margin-top: 80px;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid;
+}
+
+#header .container nav ul li a{
+    font-size: 20px;
+}
+
+#header .container nav ul li:hover{
+    background-color: lightblue;
+}
+
+#demo-data{
+    padding: 25px;
+    text-align: justify;
+}
+
+#demo-data p{
+    font-size: 18px;
+
+}
+
+/*Style for login and signup*/
+
+.content #login, #sign-up{
+    margin-top: 400px;
+    width: 700px;
+    margin: auto;
+    border: 1px solid blue;
+    padding: 20px;
+}
+
+.form-group{
+    margin-top: 20px;
+}
+
+/*Style for table*/
+
+.table{
+    width: 1200px;
+    margin: auto;
+    background-color: lightgrey;
+    border: 1px solid black;
+    padding: 5px;
+   }
+
+.table h2{
+    text-align: center;
+    color: blue;
+    padding: 10px;
+}
+
+.table th{
+    width: 200px;
+    font-size: 20px;
+   color: green;
+   border: 1px solid black;
+   text-align: center;
+}
+.table td{
+    width: 200px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+#image_upload{
+    width: 700px;
+    margin: auto;
+}
+
